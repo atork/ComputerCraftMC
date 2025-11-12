@@ -1,0 +1,8 @@
+download the insatller into the top most directory as it doesent work in folders
+this is based on fs working with absolut paths by default
+
+command: wget https://raw.githubusercontent.com/atork/ComputerCraftMC/main/installer.lua
+
+execute insatller
+
+enjoy

@@ -4,6 +4,8 @@ test.lua
 tutscript/basebuild.lua
 tutscript/hole.lua
 tutscript/makeMine.lua
+tutscript/mine.lua
+tutscript/mkCharcoal.lua
 tutscript/placeblock.lua
 tutscript/planttrees.lua
 tutscript/testfile.lua

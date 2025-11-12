@@ -1,0 +1,10 @@
+{
+  "Lua.runtime.version": "Lua 5.1",
+  "Lua.workspace.library": [
+    "${workspaceFolder}/.vscode/cc-api"
+  ],
+  "Lua.diagnostics.globals": [
+    "turtle"
+  ],
+  "Lua.telemetry.enable": false
+}

@@ -22,25 +22,29 @@ if not f then
     return
 end
 
--- Proceed with downloading listed files...
+-- Proceed with downloading listed files
 local line = f.readLine()
 while line do
     local path = line
     if path ~= "" then
         local url = base .. path
         local dir = fs.getDir(path)
+
+        -- Create directory if it doesn't exist
         if dir ~= "" and not fs.exists(dir) then
             fs.makeDir(dir)
         end
+
+        -- Delete existing file if present
         if fs.exists(path) then
             fs.delete(path)
         end
+
         print("Downloading " .. path)
         shell.run("wget", url, path)
     end
     line = f.readLine()
 end
+
 f.close()
-
 print("All files downloaded!")
-

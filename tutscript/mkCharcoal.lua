@@ -19,7 +19,8 @@ while f<4 do
 turtle.select(2)
 turtle.turnRight()
 turtle.drop(1)
-
+turtle.turnLeft()
+turtle.forward()
 f=f+1
 end
 turtle.turnRight()

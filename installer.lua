@@ -1,15 +1,15 @@
 local base = "https://raw.githubusercontent.com/atorc/ComputerCraftMC/main/"
 
 -- Attempt to download files.txt
-shell.run("wget", base .. "files.txt", "files.txt")
+shell.run("wget", base .. "index.txt", "index.txt")
 
 -- Check that files.txt exists
-if not fs.exists("files.txt") then
-    print("❌ files.txt not found! Download may have failed.")
+if not fs.exists("index.txt") then
+    print("❌ index.txt not found! Download may have failed.")
     return
 end
 
-local f = fs.open("files.txt", "r")
+local f = fs.open("index.txt", "r")
 local line = f.readLine()
 while line do
     local path = line

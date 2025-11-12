@@ -1,5 +1,6 @@
-install.lua
+installer.lua
 startup.lua
+test.lua
 tutscript/basebuild.lua
 tutscript/hole.lua
 tutscript/makeMine.lua

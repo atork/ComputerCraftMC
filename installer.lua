@@ -5,7 +5,7 @@ shell.run("wget", base .. "index.txt", "index.txt")
 
 -- Check that files.txt exists
 if not fs.exists("index.txt") then
-    print("❌ index.txt not found! Download may have failed.")
+    print("index.txt not found! Download may have failed.")
     return
 end
 
@@ -30,12 +30,12 @@ while line do
         print("Downloading " .. path)
         local success = shell.run("wget", url, path)
         if not success then
-            print("❌ Failed to download " .. path)
+            print("Failed to download " .. path)
         end
     end
     line = f.readLine()
 end
 f.close()
 
-print("✅ All files downloaded!")
+print("All files downloaded!")
 

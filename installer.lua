@@ -1,5 +1,13 @@
 local base = "https://raw.githubusercontent.com/atorc/ComputerCraftMC/main/"
+
+-- Attempt to download files.txt
 shell.run("wget", base .. "files.txt", "files.txt")
+
+-- Check that files.txt exists
+if not fs.exists("files.txt") then
+    print("❌ files.txt not found! Download may have failed.")
+    return
+end
 
 local f = fs.open("files.txt", "r")
 local line = f.readLine()
@@ -8,11 +16,13 @@ while line do
     if path ~= "" then
         local url = base .. path
 
+        -- Create directory if needed
         local dir = fs.getDir(path)
         if dir ~= "" and not fs.exists(dir) then
             fs.makeDir(dir)
         end
 
+        -- Remove existing file
         if fs.exists(path) then
             fs.delete(path)
         end
@@ -28,3 +38,4 @@ end
 f.close()
 
 print("✅ All files downloaded!")
+

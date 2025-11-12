@@ -1,4 +1,4 @@
-local base = "https://raw.githubusercontent.com/atorc/ComputerCraftMC/main/"
+local base = "https://raw.githubusercontent.com/atork/ComputerCraftMC/main/"
 
 -- Attempt to download files.txt
 shell.run("wget", base .. "index.txt", "index.txt")

@@ -11,14 +11,14 @@ end
 
 -- Final check
 if not fs.exists("index.txt") then
-    print("❌ index.txt not found! Download may have failed.")
+    print("index.txt not found! Download may have failed.")
     return
 end
 
 -- Open file safely
 local f = fs.open("index.txt", "r")
 if not f then
-    print("❌ Unable to open index.txt")
+    print("Unable to open index.txt")
     return
 end
 
@@ -42,5 +42,5 @@ while line do
 end
 f.close()
 
-print("✅ All files downloaded!")
+print("All files downloaded!")
 

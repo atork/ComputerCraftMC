@@ -1,11 +1,12 @@
-furnaces=4
-s=0
-f=0
+local furnaces=4
+local Samount = 16
+local s=0
+local f=0
 print(s)
 turtle.turnRight()
 while s<furnaces do
 turtle.select(1)
-turtle.dropDown(1)
+turtle.dropDown(Samount)
 s=s+1
 print(s)
 turtle.forward()
@@ -18,9 +19,9 @@ turtle.forward()
 while f<4 do
 turtle.select(2)
 turtle.turnRight()
-turtle.drop(1)
+turtle.drop(Samount)
 turtle.turnLeft()
-if f<4 then
+if f<3 then
 turtle.forward()    
 end
 f=f+1

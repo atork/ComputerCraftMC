@@ -20,7 +20,7 @@ turtle.select(2)
 turtle.turnRight()
 turtle.drop(1)
 turtle.turnLeft()
-if f<4 do
+if f<4 then
 turtle.forward()    
 end
 f=f+1

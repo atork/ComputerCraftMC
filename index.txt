@@ -1,4 +1,4 @@
-install.lua
+installer.lua
 startup.lua
 test.lua
 tutscript/basebuild.lua
